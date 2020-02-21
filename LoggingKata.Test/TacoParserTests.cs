@@ -16,7 +16,6 @@ namespace LoggingKata.Test
             var actual = tacoParser.Parse("34.073638, -84.677017, Taco Bell Acwort...");
 
             //Assert
-            //Assert.NotNull(actual);
             Assert.Equal(34.073638, actual.Location.Latitude);
             Assert.Equal(-84.677017, actual.Location.Longitude);
             Assert.Equal("Taco Bell Acwort...", actual.Name.Trim());
